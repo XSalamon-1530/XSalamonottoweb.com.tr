@@ -1,53 +1,66 @@
 
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XSalamon.Tr - Web Sitesi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             padding: 0;
             background: url('uKk0bYE.webp') no-repeat center center fixed;
             background-size: cover;
+            font-family: 'Poppins', sans-serif;
             color: #fff;
-            font-family: Arial, sans-serif;
         }
 
         .container {
-            width: 70%;
+            width: 90%;
+            max-width: 1000px;
             margin: auto;
-            padding: 15px;
-            background-color: rgba(0, 0, 0, 0.4);
-            border-radius: 10px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.65); /* Yazı kutuları için şeffaf arka plan */
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 15px 0;
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 20px 0;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
-            margin-top: 10px;
+            margin-top: 15px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
+            gap: 20px;
         }
 
         nav ul li a {
             text-decoration: none;
             color: #fff;
-            font-weight: bold;
+            font-weight: 600;
             background-color: rgba(255, 255, 255, 0.1);
-            padding: 6px 12px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            padding: 10px 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
         }
 
         nav ul li a:hover {
@@ -55,25 +68,21 @@
         }
 
         section {
-            margin: 20px 0;
+            margin: 30px 0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
 
         .proje {
-            background-color: rgba(0, 0, 0, 0.4);
-            padding: 10px;
-            border-radius: 8px;
-        }
-
-        h1, h2, h3, p, li {
-            color: #fff;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 4px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         a.whatsapp-link {
@@ -85,6 +94,36 @@
         a.whatsapp-link:hover {
             text-decoration: underline;
         }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header h1 {
+                font-size: 1.7rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -94,10 +133,9 @@
             <h1>XSalamon.Tr</h1>
             <nav>
                 <ul>
-                    <li><a href="#hakkimda">1</a></li>
-                    <li><a href="#proje">5</a></li>
-                    <li><a href="#iletisim">3</a></li>
-                    <li><a href="#iletisim">0</a></li>
+                    <li><a href="#hakkimda">Hakkımda</a></li>
+                    <li><a href="#proje">Projeler</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
                 </ul>
             </nav>
         </div>
@@ -106,7 +144,7 @@
     <section id="hakkimda">
         <div class="container">
             <h2>Hakkımda</h2>
-            <p>Ben XSalamon.Tr, sosyal medya ve yazılım ile uğraşıyorum.</p>
+            <p>Ben XSalamon.Tr, sosyal medya yönetimi, yazılım ve dijital danışmanlık konularında çalışıyorum.</p>
         </div>
     </section>
 
@@ -114,7 +152,16 @@
         <div class="container">
             <h2>Projelerim</h2>
             <div class="proje">
-                <h3>Instagram hesap kapatıp açma, eski tarihli hesap düşürme (2012-2019), IP çekme</h3>
+                <h3>Sosyal Medya Danışmanlığı</h3>
+                <p>Markalara ve bireylere özel sosyal medya stratejileri oluşturuyorum.</p>
+            </div>
+            <div class="proje">
+                <h3>Web ve Yazılım Geliştirme</h3>
+                <p>Kişisel ve kurumsal web projeleri geliştiriyorum.</p>
+            </div>
+            <div class="proje">
+                <h3>Dijital Güvenlik Eğitimi</h3>
+                <p>Temel siber güvenlik bilgilerini paylaşarak kullanıcıların dijital ortamda daha bilinçli hareket etmesini sağlıyorum.</p>
             </div>
         </div>
     </section>
@@ -127,7 +174,7 @@
                     +62 821-2302-5526 (WhatsApp)
                 </a>
             </p>
-            <h3>İşlemlerimiz</h3>
+            <h3>Hizmetler</h3>
             <ul>
                 <li>Eski tarihli hesap satışı</li>
                 <li>Eski tarihli hesap nasıl alabileceğini anlatmak</li>
@@ -135,9 +182,13 @@
                 <li>IP çekmeyi anlatmak</li>
                 <li>Özel hesap kapatma formları</li>
             </ul>
-            <h3>Not: Ücretsiz işlem yoktur</h3>
+            <h3>Not: Tüm hizmetler ücretlidir</h3>
         </div>
     </section>
+
+    <footer>
+        <p>&copy; 2025 XSalamon.Tr - Tüm hakları saklıdır.</p>
+    </footer>
 
 </body>
 </html>
